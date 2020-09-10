@@ -10,11 +10,21 @@ public class Product {
 	
 	private String description;
 
-	public Product(String name, ProductType type, Double price, String description) {
+	private Product(String name, ProductType type, Double price, String description) {
 		this.name = name;
 		this.type = type;
 		this.price = price;
 		this.description = description;
+	}
+	
+	public static Product newEletronic(String name, Double price, String description) {
+		
+		return new Product(name, ProductType.ELETRONIC, price, description);
+	}
+	
+	public static Product newBook(String name, Double price, String description) {
+		
+		return new Product(name, ProductType.BOOKS, price, description);
 	}
 
 	public String getName() {
