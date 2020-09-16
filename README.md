@@ -6,5 +6,4 @@ Monstrar melhores práticas de codificação em Java que podem melhorar a qualid
 
 ### Tópicos
 
-1. Construção de Objetos
-1.1 Construção com Métodos de Fabricação Estáticos;
+* Construção de Objetos
