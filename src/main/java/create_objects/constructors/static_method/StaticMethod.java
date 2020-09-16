@@ -1,6 +1,6 @@
-package constructors.static_method;
+package create_objects.constructors.static_method;
 
-public class Main {
+public class StaticMethod {
 
 	public static void main(String[] args) {
 
