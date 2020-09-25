@@ -1,53 +1,32 @@
 package create_objects.constructors.builder;
 
-import create_objects.constructors.builder.MotherBoard.Builder;
-import create_objects.constructors.builder.MotherBoard.HardDisk;
-import create_objects.constructors.builder.MotherBoard.Memory;
-import create_objects.constructors.builder.MotherBoard.Processor;
-
-public final class ComputerBuilder implements MotherBoard, Processor, Memory, HardDisk, Builder {
-
-	private String motherBoardName;
-	private String processorName;
-	private Double processorClock;
-	private int ram;
-	private int hardDiskSize;
+public interface ComputerBuilder{
 	
-	private ComputerBuilder() {}
+	Processor motherBoard(String name);
 	
-	public static MotherBoard newComputer() {
-		return new ComputerBuilder();
-	}
-	
-	@Override
-	public Processor motherBoard(String name) {
-		this.motherBoardName = name;
+	public interface Processor{
 		
-		return this;
+		Memory processor(String name, double clock);
 	}
 	
-	@Override
-	public Memory processor(String name, Double clock) {
-		this.processorName = name;
-		this.processorClock = clock;
+	public interface Memory{
+		HardDisk memory(int ram);
+	}
+	
+	public interface HardDisk{
 		
-		return this;
+		Case hardDisk(int size);	
 	}
 	
-	@Override
-	public HardDisk memory(int ram) {
-		this.ram = ram;
-		return this;
+	public interface Case extends Builder{
+		
+		Builder caseWithBlackColor();
+		
+		Builder caseWithWhiteColor();
 	}
 	
-	@Override
-	public Builder hardDisk(int size) {
-		this.hardDiskSize = size;
-		return this;
-	}
-	
-	@Override
-	public Computer builder() {
-		return new Computer(motherBoardName, processorName, processorClock, ram, hardDiskSize);
+	public interface Builder{
+		
+		Computer build();
 	}
 }

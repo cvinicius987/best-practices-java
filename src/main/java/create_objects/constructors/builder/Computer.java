@@ -4,17 +4,23 @@ public final class Computer {
 	
 	private String motherBoard;
 	private String processorName;
-	private Double processorClock;
+	private double processorClock;
 	private int ram;
 	private int hardDiskSize;
+	private CaseColor caseColor;
 	
-	public Computer(String motherBoard, String processorName, Double processorClock, int ram, int hardDiskSize) {
+	Computer(String motherBoard, String processorName, double processorClock, int ram, int hardDiskSize, CaseColor caseColor) {
 		super();
-		this.motherBoard = motherBoard;
-		this.processorName = processorName;
+		this.motherBoard    = motherBoard;
+		this.processorName  = processorName;
 		this.processorClock = processorClock;
 		this.ram = ram;
 		this.hardDiskSize = hardDiskSize;
+		this.caseColor = caseColor;
+	}
+	
+	public static ComputerBuilder makeComputer() {
+		return new ComputerBuilderImpl();
 	}
 
 	public String getMotherBoard() {
@@ -25,7 +31,7 @@ public final class Computer {
 		return processorName;
 	}
 
-	public Double getProcessorClock() {
+	public double getProcessorClock() {
 		return processorClock;
 	}
 
@@ -36,10 +42,14 @@ public final class Computer {
 	public int getHardDiskSize() {
 		return hardDiskSize;
 	}
+	
+	public CaseColor getCaseColor() {
+		return caseColor;
+	}
 
 	@Override
 	public String toString() {
 		return "ComputerPC [motherBoard=" + motherBoard + ", processorName=" + processorName + ", processorClock="
-				+ processorClock + ", ram=" + ram + ", hardDiskSize=" + hardDiskSize + "]";
+				+ processorClock + ", ram=" + ram + ", hardDiskSize=" + hardDiskSize + ", caseColor="+caseColor+"]";
 	}
 }

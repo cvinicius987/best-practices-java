@@ -20,17 +20,12 @@ public class Point {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
+				
+		long result = Double.doubleToLongBits(x);
 		
-		long temp = Double.doubleToLongBits(x);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = 31 * result + Double.doubleToLongBits(y);
 		
-		temp = Double.doubleToLongBits(y);
-		
-		result = prime * result + (int) (temp ^ (temp >>> 32));
-		
-		return result;
+		return (int)result;
 	}
 
 	@Override
@@ -49,25 +44,5 @@ public class Point {
 	@Override
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
-	}
-	
-	/**
-	 * Comparação de Points 
-	 * 
-	 * Aqui temos um resultado esperado pois o equals esta 
-	 * devidamente tratado para comparar dois Points
-	 */
-	public static void main(String[] args) {
-		
-		System.out.println(" ============== Point =============");
-		
-		var point1 = new Point(12.9,  13.898);
-		var point2 = new Point(12.9,  13.89);
-		var point3 = new Point(12.9,  13.89);
-		
-		System.out.println(point1.equals(null));
-		System.out.println(point1.equals(point2));
-		System.out.println(point2.equals(point3));
-		System.out.println(point3.equals(point1));	
 	}
 }

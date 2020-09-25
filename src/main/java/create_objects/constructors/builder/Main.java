@@ -4,13 +4,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		var computer = ComputerBuilder.newComputer()
+		var computerDefault = Computer.makeComputer()
+										.motherBoard("Asus")
+										.processor("Intel", 2.4)
+										.memory(8)
+										.hardDisk(512)
+									.build();
+		
+		var computerCaseBlack = Computer.makeComputer()
 											.motherBoard("Asus")
 											.processor("Intel", 2.4)
 											.memory(8)
 											.hardDisk(512)
-										.builder();
+											.caseWithBlackColor()
+										.build();
 		
-		System.out.println(computer);
+		System.out.println(computerDefault);
+		System.out.println(computerCaseBlack);
 	}
 }
