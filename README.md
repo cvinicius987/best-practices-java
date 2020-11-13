@@ -7,3 +7,4 @@ Monstrar melhores práticas de codificação em Java que podem melhorar a qualid
 ### Tópicos
 
 * Construção de Objetos
+* Métodos Base
