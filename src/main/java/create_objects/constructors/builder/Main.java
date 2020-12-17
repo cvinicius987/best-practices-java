@@ -19,6 +19,7 @@ public class Main {
 											.caseWithBlackColor()
 										.build();
 		
+		
 		System.out.println(computerDefault);
 		System.out.println(computerCaseBlack);
 	}

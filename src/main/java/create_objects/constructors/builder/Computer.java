@@ -20,7 +20,7 @@ public final class Computer {
 	}
 	
 	public static ComputerBuilder makeComputer() {
-		return new ComputerBuilderImpl();
+		return new ObjComputerBuilder();
 	}
 
 	public String getMotherBoard() {

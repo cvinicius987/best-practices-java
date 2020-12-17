@@ -6,14 +6,14 @@ import create_objects.constructors.builder.ComputerBuilder.HardDisk;
 import create_objects.constructors.builder.ComputerBuilder.Memory;
 import create_objects.constructors.builder.ComputerBuilder.Processor;
 
-final class ComputerBuilderImpl implements ComputerBuilder, Processor, Memory, HardDisk, Case, Builder {
+final class ObjComputerBuilder implements ComputerBuilder, Processor, Memory, HardDisk, Case, Builder {
 
 	private String motherBoardName, processorName;
 	private double processorClock;
 	private int ram, hardDiskSize;
 	private CaseColor caseColor = CaseColor.WHITE;
 	
-	ComputerBuilderImpl() {}
+	ObjComputerBuilder() {}
 	
 	@Override
 	public Processor motherBoard(String name) {
