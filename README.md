@@ -1,22 +1,22 @@
-## Boas Práticas em Desenvolvimento Java
+## Best Practices on Java Development
 
-### Motivação
+### Project
 
-Aplicar as melhores práticas de codificação usando a linguagem Java.
+The project has the proposal on apply the best practices on Java Development.
 
-### Tópicos
+### Content
 
-* **Métodos base**
+* **Base Methods**
     * Equals
 
-* **Construção de Objetos**
+* **Create Objects**
     * Builder
-    * Métodos Fábricas
+    * Factory Methods
     * Finalize
     * Imutable
-    * Primitivos
-    * Uso do try e finally
+    * Primitives
+    * try/finally
 
-#### Referências
+#### Reference
 
 [Effective Java by Joshua Block](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997/ref=sr_1_1?dchild=1&keywords=effective+java&qid=1605229301&sr=8-1)
