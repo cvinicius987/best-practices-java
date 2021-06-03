@@ -8,6 +8,8 @@ The project has the proposal on apply the best practices on Java Development.
 
 * **Base Methods**
     * Equals
+    * Hashcode
+    * Clone
 
 * **Create Objects**
     * Builder
