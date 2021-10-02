@@ -10,6 +10,7 @@ The project has the proposal on apply the best practices on Java Development.
     * Equals
     * Hashcode
     * Clone
+    * Comparable
 
 * **Create Objects**
     * Builder
