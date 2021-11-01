@@ -23,7 +23,7 @@ The project has the proposal on apply the best practices on Java Development.
 * **Classes and Interfaces**
 
 * **Generics**
-    * Types and wildcard
+    * Types (Old, Object, wildcard<?>, Generic)
    
 
 #### Reference
