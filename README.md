@@ -24,6 +24,11 @@ The project has the proposal on apply the best practices on Java Development.
 
 * **Generics**
     * Types (Old, Object, wildcard<?>, Generic)
+    * Varargs with Generics  
+
+* **Methods**
+    * Defensive Copys
+      
    
 
 #### Reference
