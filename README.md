@@ -28,6 +28,8 @@ The project has the proposal on apply the best practices on Java Development.
 
 * **Methods**
     * Defensive Copys
+    * Overload
+    * Overload Collection Remove()
       
    
 

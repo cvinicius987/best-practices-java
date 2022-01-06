@@ -1,7 +1,5 @@
 package defensive_copy;
 
-import java.util.Date;
-
 public class Code {
 
     private String code;
